@@ -1,22 +1,22 @@
 # CHAPTER 5 – DICTIONARY & SETS   
 # Dictionary is a collection of keys-value pairs.
-a = {
-"key": "value",
-"harry": "code",
-"marks": "100",
-"list": [1, 2, 9]
-}
-print(a["key"])   # Output: "value"
-print(a["list"])  # Output: [1, 2, 9]
+# a = {
+# "key": "value",
+# "harry": "code",
+# "marks": "100",
+# "list": [1, 2, 9]
+# }
+# print(a["key"])   # Output: "value"
+# print(a["list"])  # Output: [1, 2, 9]
 
-# Dict 
-car = {
-    "brand": "Toyota",
-    "model": "Camry",
-    "year": 2020
-}
+# # Dict 
+# car = {
+#     "brand": "Toyota",
+#     "model": "Camry",
+#     "year": 2020
+# }
 
-print(car["model"])   # Output kya hoga
+# print(car["model"])   # Output kya hoga
 
 # Sets
 # Set is a collection of non-repetitive elements.
@@ -27,35 +27,62 @@ print(car["model"])   # Output kya hoga
 # Write a program to create a dictionary of Hindi words with values as their English
 # translation. Provide user with an option to look it up!
 # Hindi to English dictionary
-hindi_english_dict = {
-    "पुस्तक": "book",
-    "सेब": "apple",
-    "कुत्ता": "dog",
-    "बिल्ली": "cat",
-    "पानी": "water",
-    "खिड़की": "window",
-    "दरवाज़ा": "door",
-    "आकाश": "sky",
-    "पेड़": "tree",
-    "घर": "house"
-}
-
-print("हिंदी-इंग्लिश शब्दकोश (Hindi-English Dictionary)")
-print("आप किसी भी हिंदी शब्द का अंग्रेज़ी अनुवाद जान सकते हैं।\n")
-
-while True:
-    word = input("हिंदी शब्द दर्ज करें (या 'exit' लिखें बंद करने के लिए): ")
-
-    if word == "exit":
-        print("धन्यवाद! शब्दकोश बंद हो गया।")
-        break
-
-    translation = hindi_english_dict.get(word)
-    if translation:
-        print(f"अंग्रेज़ी अनुवाद: {translation}\n")
-    else:
-        print("माफ़ कीजिए, यह शब्द शब्दकोश में नहीं है।\n")
+# c
 
 
 # Write a program to input eight numbers from the user and display all the unique numbers (once).
+# Program to input 8 numbers and display unique numbers
 
+# Step 1: Input 8 numbers
+# numbers = []
+# for i in range(8):
+#     num = int(input(f"Enter number {i+1}: "))
+#     numbers.append(num)
+
+# # Step 2: Find and display unique numbers
+# unique_numbers = list(set(numbers))
+
+# print("\nUnique numbers are:")
+# for num in unique_numbers:
+#     print(num)
+
+#Can we have a set with 18 (int) and '18' (str) as a value in it?
+# my_set = {18, "18"}
+# print(my_set)
+
+# #What will be the length of following set s:
+s = set()
+s.add(20)
+s.add(20.0)
+s.add('20') # length of s after these operations?
+
+
+
+print(len(s))
+
+s = {}
+print(type(s))
+
+#Create an empty dictionary. Allow 4 friends to enter their favorite language as 
+# value and use key as their names. Assume that the names are unique
+my_dict = {}
+
+
+for i in range(4):
+    name = input(f"Enter Yor name {i+1}")
+    lngauge =  input(f"Hey {name} Enter your fav langaue") 
+    my_dict[name] = lngauge
+
+print (my_dict)
+
+# my_dict['Alice'] = input("Hey Alic enter your fav lan: ")
+# my_dict['Bob'] = input("Hey bob enter your fav lan: ")
+# my_dict['Charlie'] = input("Hey Charlie enter your fav lan: ")
+# my_dict['Diana'] = input("Hey Diana enter your fav lan: ")
+
+# print(my_dict)
+
+#If the names of 2 friends are same; what will happen to the program in problem 6
+
+
+# ANS ==> 
