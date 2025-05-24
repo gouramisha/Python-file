@@ -24,3 +24,6 @@ name = input("Enter the name ")
 # or you can also use like 
 
 print(f"Dear {name}\n You are selected \n {Date.today()} ")
+
+
+# understood yes or not ok jaani ok love you bye
