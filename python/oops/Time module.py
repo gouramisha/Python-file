@@ -11,7 +11,7 @@ print("End:", time.time())
 # Start: 1602299933.233374
 # End: 1602299935.233376
 
-# time.strftime()
+# 
 import time
 
 t = time.localtime()
