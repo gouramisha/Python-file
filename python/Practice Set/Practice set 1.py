@@ -5,4 +5,4 @@ while i <= n:
     print(i)
     i += 1
 
-    
+#4. Write a program to find whether a given number is prime or not. 
