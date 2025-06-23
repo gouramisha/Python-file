@@ -8,3 +8,10 @@ for i in range(1, n+1):
         else:
             print(" ", end=" ")
     print()  # Move to next line
+
+
+# Multiplication Table of n in Reverse Order
+n = int(input("Enter a number: "))
+
+for i in range(10, 0, -1):  # Start from 10 to 1, step -1
+    print(f"{n} x {i} = {n * i}")
