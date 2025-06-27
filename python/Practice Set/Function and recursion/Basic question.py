@@ -47,6 +47,15 @@ def factorial(n):
 
 print(factorial(5))  # Output: 120
 
+# Write a recursive function to calculate the sum of first n natural numbers.
+
+def sum_n(n):
+    if n == 1:
+        return 1
+    else:
+        return n + sum_n(n - 1)
+
+print(sum_n(5))  # Output: 15
 
 
 
