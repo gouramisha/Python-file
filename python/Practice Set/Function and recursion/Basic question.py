@@ -57,5 +57,12 @@ def sum_n(n):
 
 print(sum_n(5))  # Output: 15
 
+#Star Pattern *, ***, ***** for n = 3 (with Function)
+
+def star_pattern_odd(n):
+    for i in range(n):
+        print("*" * (2*i + 1))
+
+star_pattern_odd(3)
 
 
