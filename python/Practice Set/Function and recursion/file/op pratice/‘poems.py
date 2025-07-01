@@ -5,3 +5,5 @@ if 'twinkle' in content.lower():
     print("Yes, 'twinkle' is present.")
 else:
     print("No, 'twinkle' is not present.")
+
+
