@@ -1,0 +1,152 @@
+/* General styling for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+
+
+.logo-img {
+    width: 40px; /* Adjust size as per your logo */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fbc94c; /* Adjust as per logo's color */
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none; 
+     display: flex; 
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #4a73b1; /* Hover effect color */
+}
+
+/* Demo button */
+.demo-button {
+    background-color: #4a73b1; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.demo-button:hover {
+    background-color: #365a9e; /* Hover effect for the button */
+}
+/* Content Section Styles */
+.content {
+    background-color: #edeced;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content ul li {
+    flex: 1 1 48%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+}
+
+.content .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .stats li {
+    flex: 1 1 30%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    margin: 5px;
+}
+
+.content .enquire-form {
+    margin-top: 30px;
+}
+
+.content .enquire-form input,
+.content .enquire-form select,
+.content .enquire-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.content .enquire-form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content .enquire-form button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
