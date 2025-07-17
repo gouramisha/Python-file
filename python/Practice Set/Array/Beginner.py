@@ -12,8 +12,9 @@ print(arr[-1])  # Last element
 arr[2] = 10
 print(arr)
 
-Add and Remove Elements
+# Add and Remove Elements
 
 arr.append(6)
 arr.remove(2)
 print(arr)
+
