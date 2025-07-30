@@ -1,0 +1,17 @@
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        min_price = float('inf')  # Start with a very high minimum price
+        max_profit = 0  # No profit at the start
+
+        for price in prices:
+            if price < min_price:
+                min_price = price  # Update the minimum price so far
+            else:
+                profit = price - min_price  # Calculate profit if sold today
+                max_profit = max(max_profit, profit)  # Update max profit if it's higher
+
+        return max_profit
