@@ -16,3 +16,13 @@ x.append(8)
 
 # Sort list ascending:
 x.sort()
+
+# creating algorith
+my_array = [7, 12, 9, 4, 11, 8]
+minVal = my_array[0]
+
+for i in my_array:
+  if i < minVal:
+    minVal = i
+
+print('Lowest value:', minVal)git
