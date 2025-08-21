@@ -15,3 +15,7 @@ print("Peek: ", frontElement)
 # Dequeue
 poppedElement = queue.pop(0)
 print("Dequeue: ", poppedElement)
+
+# isEmpty
+isEmpty = not bool(queue)
+print("isEmpty: ", isEmpty)
