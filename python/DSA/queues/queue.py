@@ -7,3 +7,7 @@ queue.append('A')
 queue.append('B')
 queue.append('C')
 print("Queue: ", queue)
+
+# Peek
+frontElement = queue[0]
+print("Peek: ", frontElement)
