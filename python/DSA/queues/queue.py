@@ -19,3 +19,4 @@ print("Dequeue: ", poppedElement)
 # isEmpty
 isEmpty = not bool(queue)
 print("isEmpty: ", isEmpty)
+
