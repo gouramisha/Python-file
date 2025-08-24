@@ -24,3 +24,10 @@ def add(name):
 
 add('Bob')
 print(my_list)
+
+# Looking up a name
+def contains(name):
+  index = hash_function(name)
+  return my_list[index] == name
+
+print("'Pete' is in the Hash Table:", contains('Pete'))
