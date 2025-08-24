@@ -26,8 +26,33 @@ add('Bob')
 print(my_list)
 
 # Looking up a name
-def contains(name):
-  index = hash_function(name)
-  return my_list[index] == name
+# def contains(name):
+#   index = hash_function(name)
+#   return my_list[index] == name
 
-print("'Pete' is in the Hash Table:", contains('Pete'))
+# print("'Pete' is in the Hash Table:", contains('Pete'))
+
+# Handling collisions
+my_list = [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
+]
+def add(name):
+  index = hash_function(name)
+  my_list[index].append(name)
+
+add('Bob')
+add('Pete')
+add('Jones')
+add('Lisa')
+add('Siri')
+add('Stuart')
+print(my_list)
