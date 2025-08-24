@@ -15,3 +15,12 @@ def hash_fundtion(value):
 
         return sum_of_chars % 10 
     print(" 'Bob' has hash code :", hash_fubction('Bob'))
+
+#Insert an Elemment
+def add(name):
+ def hash_fundtion(value):
+    index = hash_function(name)
+    my_list[index] = name
+
+add('Bob')
+print(my_list)
