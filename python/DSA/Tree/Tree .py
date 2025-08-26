@@ -25,4 +25,5 @@ nodeB.right = nodeF
 nodeF.left = nodeG
 
 # Test
-print("root.right.left.data:", root.right.left.data)
+print("root.right.left.data:", root.right.
+left.data)
