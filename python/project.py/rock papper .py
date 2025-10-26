@@ -1,35 +1,31 @@
 import random
 
 # Options
-options = ["rock", "paper", "scissors"]
+options = ["Rock", "Paper", "Scissors"]
 
-# Welcome message
-print("Welcome to Rock, Paper, Scissors!")
-print("Type 'rock', 'paper', or 'scissors' to play. Type 'quit' to exit.\n")
+# AI Players
+def ai_player1():
+    # Random choice
+    return random.choice(options)
 
-while True:
-    # User input
-    user_choice = input("Your choice: ").lower()
-    
-    if user_choice == "quit":
-        print("Thanks for playing!")
-        break
-    
-    if user_choice not in options:
-        print("Invalid choice! Try again.\n")
-        continue
-    
-    # Computer choice
-    computer_choice = random.choice(options)
-    print(f"Computer chose: {computer_choice}")
-    
-    # Determine winner
-    if user_choice == computer_choice:
-        print("It's a tie!\n")
-    elif (user_choice == "rock" and computer_choice == "scissors") or \
-         (user_choice == "paper" and computer_choice == "rock") or \
-         (user_choice == "scissors" and computer_choice == "paper"):
-        print("You win!\n")
+def ai_player2():
+    # Random choice or you can add a simple pattern AI
+    return random.choice(options)
+
+# Decide winner
+def decide_winner(choice1, choice2):
+    if choice1 == choice2:
+        return "Draw"
+    elif (choice1 == "Rock" and choice2 == "Scissors") or \
+         (choice1 == "Paper" and choice2 == "Rock") or \
+         (choice1 == "Scissors" and choice2 == "Paper"):
+        return "AI Player 1 wins!"
     else:
-        print("Computer wins!\n")
+        return "AI Player 2 wins!"
 
+# Main game
+rounds = 5
+for i in range(rounds):
+    c1 = ai_player1()
+    c2 = ai_player2()
+    print(f"Round {i+1}: AI Player 1 chooses {c1}, AI Player 2 chooses {c2} => {decide_winner(c1, c2)}")
